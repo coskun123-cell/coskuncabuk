@@ -13,7 +13,7 @@ function Chat({ messages }) {
 
     const sendMessage = async(e) => {
         e.preventDefault();
-        await axios.post('http://localhost:9000/messages/new', {
+        await axios.post('http://localhost:9001/messages/new', {
             message: input, // no fixed messsage, whatever inserted in unput
             name: "DEMO APP",
             timestamp: "Just now!",

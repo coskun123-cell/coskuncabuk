@@ -9,7 +9,7 @@ function App() {
   const [messages, setMessages] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:9000/messages/sync').then(response => {
+    axios.get('http://localhost:9001/messages/sync').then(response => {
         setMessages(response.data);
       })
   }, [])
