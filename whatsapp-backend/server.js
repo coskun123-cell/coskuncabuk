@@ -81,6 +81,10 @@ app.get('/messages/sync', (req, res) => {
     })
 })
 
+app.get("/",(req,res)=>{
+    res.send('APP IS RUNNING')
+})
+
 app.post('/messages/new', (req, res) => {
     const dbMessages = req.body // passing message structure into body
     console.log({dbMessages})
