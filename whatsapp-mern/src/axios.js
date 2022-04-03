@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const instance = axios.create({
-    baseUrl: "http://localhost:9001"
+    baseUrl: "https://whatsup1clone.herokuapp.com"
 });
 
 export default instance;
