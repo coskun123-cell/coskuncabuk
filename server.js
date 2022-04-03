@@ -102,7 +102,7 @@ if (process.env.NODE_ENV === 'production') {
 	app.use(express.static('whatsapp-mern/build'));
 
     app.get("*",(req,res)=>{
-        res.sendFile(path.resolve(__dirname,"whatsapp-mern","bulid","index.html"))
+        res.sendFile(path.resolve(__dirname,"whatsapp-mern","build","index.html"))
     })
 }
 
